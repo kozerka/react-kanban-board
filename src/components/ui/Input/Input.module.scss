@@ -1,0 +1,21 @@
+@import '../../../styles/variables';
+.base {
+	margin: 1rem 0;
+	width: 100%;
+	border: 2px solid $border-color-light;
+	border-radius: 0.25em;
+	padding: 0.25em 0.5em;
+	font-size: 1rem;
+	cursor: pointer;
+	line-height: 1.1;
+	background-image: transparent;
+	text-align: center;
+	background: $border-color-light;
+	&--edit{
+		width:100%;
+	}
+	&--submit{
+		width:15rem;
+		margin-left:1rem
+	}
+}

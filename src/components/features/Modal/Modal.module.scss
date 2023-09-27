@@ -1,0 +1,36 @@
+@import '../../../styles/variables';
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: $bg-color;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 999;
+	backdrop-filter: blur(10px);
+}
+.content {
+	width: 60%;
+	max-width: 38rem;
+	background-color: $button-color;
+	padding: 1.25rem;
+	border-radius: 1rem;
+	box-shadow: $border-shadow;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	&--edit{
+		justify-content: center;
+		align-items: center;
+	}
+}
+.actions {
+	margin-top: 1.25rem;
+	display: flex;
+	justify-content: space-between;
+}
+
